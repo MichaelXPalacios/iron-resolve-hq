@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Play, Upload, Link, Plus } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
@@ -7,37 +7,52 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { supabase, type Video } from '@/lib/supabase'
 import { toast } from '@/components/ui/use-toast'
 
-const VideoLibrary = () => {
-  const [videos, setVideos] = useState<Video[]>([])
-  const [isUploading, setIsUploading] = useState(false)
-  const [showUploadDialog, setShowUploadDialog] = useState(false)
+type Video = {
+  id: string
+  title: string
+  description?: string
+  video_url: string
+  thumbnail_url?: string
+  video_type: 'youtube' | 'upload'
+}
 
-  // Form states
+const VideoLibrary = () => {
+  // Sample data for UI demonstration
+  const [videos] = useState<Video[]>([
+    {
+      id: '1',
+      title: 'Understanding Life Insurance Basics',
+      description: 'A comprehensive guide to choosing the right life insurance policy for your family\'s needs.',
+      video_url: 'https://youtube.com/watch?v=dQw4w9WgXcQ',
+      thumbnail_url: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
+      video_type: 'youtube'
+    },
+    {
+      id: '2',
+      title: 'Auto Insurance Claims Process',
+      description: 'Step-by-step walkthrough of filing an auto insurance claim efficiently.',
+      video_url: 'https://youtube.com/watch?v=dQw4w9WgXcQ',
+      thumbnail_url: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
+      video_type: 'youtube'
+    },
+    {
+      id: '3',
+      title: 'Home Insurance Coverage Explained',
+      description: 'What your home insurance covers and what it doesn\'t - protecting your biggest investment.',
+      video_url: 'https://youtube.com/watch?v=dQw4w9WgXcQ',
+      thumbnail_url: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
+      video_type: 'youtube'
+    }
+  ])
+  
+  const [showUploadDialog, setShowUploadDialog] = useState(false)
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
   const [youtubeUrl, setYoutubeUrl] = useState('')
   const [selectedFile, setSelectedFile] = useState<File | null>(null)
 
-  useEffect(() => {
-    fetchVideos()
-  }, [])
-
-  const fetchVideos = async () => {
-    const { data, error } = await supabase
-      .from('videos')
-      .select('*')
-      .order('created_at', { ascending: false })
-
-    if (error) {
-      console.error('Error fetching videos:', error)
-      return
-    }
-
-    setVideos(data || [])
-  }
 
   const extractYouTubeId = (url: string) => {
     const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/
@@ -45,7 +60,7 @@ const VideoLibrary = () => {
     return match && match[2].length === 11 ? match[2] : null
   }
 
-  const handleYouTubeUpload = async () => {
+  const handleYouTubeUpload = () => {
     if (!title || !youtubeUrl) {
       toast({
         title: "Missing Information",
@@ -65,41 +80,16 @@ const VideoLibrary = () => {
       return
     }
 
-    setIsUploading(true)
-
-    const videoData = {
-      title,
-      description,
-      video_url: youtubeUrl,
-      thumbnail_url: `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`,
-      video_type: 'youtube' as const
-    }
-
-    const { error } = await supabase
-      .from('videos')
-      .insert([videoData])
-
-    if (error) {
-      toast({
-        title: "Upload Failed",
-        description: "Failed to add YouTube video",
-        variant: "destructive"
-      })
-      console.error('Error uploading video:', error)
-    } else {
-      toast({
-        title: "Success!",
-        description: "YouTube video added successfully"
-      })
-      setShowUploadDialog(false)
-      resetForm()
-      fetchVideos()
-    }
-
-    setIsUploading(false)
+    // Demo functionality - just show success
+    toast({
+      title: "Success!",
+      description: "Video would be added in full version"
+    })
+    setShowUploadDialog(false)
+    resetForm()
   }
 
-  const handleFileUpload = async () => {
+  const handleFileUpload = () => {
     if (!title || !selectedFile) {
       toast({
         title: "Missing Information",
@@ -109,61 +99,13 @@ const VideoLibrary = () => {
       return
     }
 
-    setIsUploading(true)
-
-    // Upload file to Supabase storage
-    const fileExt = selectedFile.name.split('.').pop()
-    const fileName = `${Date.now()}.${fileExt}`
-    const filePath = `videos/${fileName}`
-
-    const { error: uploadError } = await supabase.storage
-      .from('videos')
-      .upload(filePath, selectedFile)
-
-    if (uploadError) {
-      toast({
-        title: "Upload Failed",
-        description: "Failed to upload video file",
-        variant: "destructive"
-      })
-      console.error('Error uploading file:', uploadError)
-      setIsUploading(false)
-      return
-    }
-
-    const { data: urlData } = supabase.storage
-      .from('videos')
-      .getPublicUrl(filePath)
-
-    const videoData = {
-      title,
-      description,
-      video_url: urlData.publicUrl,
-      video_type: 'upload' as const
-    }
-
-    const { error } = await supabase
-      .from('videos')
-      .insert([videoData])
-
-    if (error) {
-      toast({
-        title: "Upload Failed",
-        description: "Failed to save video information",
-        variant: "destructive"
-      })
-      console.error('Error saving video:', error)
-    } else {
-      toast({
-        title: "Success!",
-        description: "Video uploaded successfully"
-      })
-      setShowUploadDialog(false)
-      resetForm()
-      fetchVideos()
-    }
-
-    setIsUploading(false)
+    // Demo functionality - just show success
+    toast({
+      title: "Success!",
+      description: "Video would be uploaded in full version"
+    })
+    setShowUploadDialog(false)
+    resetForm()
   }
 
   const resetForm = () => {
@@ -270,12 +212,11 @@ const VideoLibrary = () => {
                       placeholder="https://youtube.com/watch?v=..."
                     />
                   </div>
-                  <Button 
+                   <Button 
                     onClick={handleYouTubeUpload} 
-                    disabled={isUploading}
                     className="w-full"
                   >
-                    {isUploading ? 'Adding...' : 'Add YouTube Video'}
+                    Add YouTube Video
                   </Button>
                 </TabsContent>
                 
@@ -308,12 +249,11 @@ const VideoLibrary = () => {
                       onChange={(e) => setSelectedFile(e.target.files?.[0] || null)}
                     />
                   </div>
-                  <Button 
+                   <Button 
                     onClick={handleFileUpload} 
-                    disabled={isUploading}
                     className="w-full"
                   >
-                    {isUploading ? 'Uploading...' : 'Upload Video'}
+                    Upload Video
                   </Button>
                 </TabsContent>
               </Tabs>
@@ -321,17 +261,13 @@ const VideoLibrary = () => {
           </Dialog>
         </div>
 
-        {videos.length === 0 ? (
-          <div className="text-center py-12">
-            <Play className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-foreground mb-2">
-              No videos yet
-            </h3>
-            <p className="text-muted-foreground">
-              Add your first video to get started!
-            </p>
-          </div>
-        ) : (
+        <div className="mb-8 text-center">
+          <p className="text-muted-foreground">
+            Interactive video management coming soon! For now, enjoy these sample videos.
+          </p>
+        </div>
+
+        {videos.length > 0 && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {videos.map((video) => (
               <Card key={video.id} className="overflow-hidden hover:shadow-lg transition-shadow">
