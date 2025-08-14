@@ -16,11 +16,9 @@ const Header = () => {
             <Link to="/" className="text-foreground hover:text-primary transition-colors font-medium">
               HOME
             </Link>
-            <div className="relative group">
-              <a href="#services" className="text-foreground hover:text-primary transition-colors font-medium cursor-pointer">
-                SERVICES
-              </a>
-            </div>
+            <Link to="/services" className="text-foreground hover:text-primary transition-colors font-medium">
+              SERVICES
+            </Link>
             <Link to="/about" className="text-foreground hover:text-primary transition-colors font-medium">
               ABOUT
             </Link>

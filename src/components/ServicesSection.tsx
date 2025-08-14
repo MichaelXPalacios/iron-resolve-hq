@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Shield, Heart, FileText, Stamp, ArrowRight } from "lucide-react";
+import { Shield, Heart, DollarSign, ArrowRight } from "lucide-react";
 
 const services = [
   {
@@ -10,22 +10,16 @@ const services = [
     features: ["Term Life Insurance", "Whole Life Insurance", "Universal Life", "Family Protection Plans"]
   },
   {
+    icon: DollarSign,
+    title: "Final Expense",
+    description: "Plan ahead with dignity and ensure your final expenses are covered. Final expense insurance provides peace of mind by covering funeral costs, medical bills, and other end-of-life expenses, protecting your family from financial burden during difficult times.",
+    features: ["Funeral Coverage", "Medical Expenses", "Burial Costs", "Debt Protection"]
+  },
+  {
     icon: Shield,
     title: "Medicare Plans",
     description: "Navigate Medicare with confidence. I help you understand your options and choose the right Medicare plan that fits your healthcare needs and budget. From Medicare Advantage to Supplement plans, I'll guide you through every step of the process.",
     features: ["Medicare Advantage", "Medicare Supplements", "Part D Prescription", "Annual Open Enrollment"]
-  },
-  {
-    icon: FileText,
-    title: "Obamacare/ACA",
-    description: "Get comprehensive health coverage through the Affordable Care Act marketplace. I'll help you find the right plan that meets your healthcare needs while staying within your budget, ensuring you have access to quality medical care.",
-    features: ["Individual Plans", "Family Coverage", "Subsidy Assistance", "Special Enrollment"]
-  },
-  {
-    icon: Stamp,
-    title: "Notary Services",
-    description: "Professional notary services for all your important documents. I provide reliable, convenient notarization services to ensure your legal documents are properly authenticated and legally binding.",
-    features: ["Document Notarization", "Mobile Services", "Real Estate Documents", "Legal Paperwork"]
   }
 ];
 
@@ -43,7 +37,7 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
