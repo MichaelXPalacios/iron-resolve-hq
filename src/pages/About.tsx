@@ -15,7 +15,7 @@ import {
   TrendingUp,
   CheckCircle
 } from "lucide-react";
-import professionalHeadshot from "@/assets/professional-headshot.jpg";
+import professionalHeadshot from "@/assets/BD5B7637-8FBA-45F7-9514-BD1A9F724345.jpeg";
 
 const About = () => {
   const achievements = [
