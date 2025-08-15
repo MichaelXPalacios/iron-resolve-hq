@@ -93,7 +93,7 @@ const About = () => {
               <div className="prose prose-lg text-muted-foreground">
                 <p className="mb-4">
                   Hello! I'm Tanner Nappe, a dedicated and experienced insurance professional at Tanner Protects. 
-                  With over 8 years in the insurance industry, I specialize in Life Insurance, Medicare Plans, 
+                  With over 2 years in the insurance industry, I specialize in Life Insurance, Medicare Plans, 
                   ACA Marketplace coverage, and Notary services, providing tailored solutions to meet your unique needs.
                 </p>
                 <p className="mb-4">
