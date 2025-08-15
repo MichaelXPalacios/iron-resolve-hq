@@ -8,8 +8,8 @@ const HeroSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-            Marcus Protects Brings Quality Insurance Coverage to Your Doorstep in{" "}
-            <span className="text-primary">Rio Grande Valley</span>
+            Tanner Protects Brings Quality Insurance Coverage to Your Doorstep in{" "}
+            <span className="text-primary">Austin and San Antonio</span>
           </h1>
         </div>
 
