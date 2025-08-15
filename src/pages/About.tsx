@@ -86,13 +86,13 @@ const About = () => {
                   Marcus Rodriguez
                 </h2>
                 <h3 className="text-xl text-primary font-semibold mb-4">
-                  MARCUS PROTECTS - Leading Insurance Advisor
+                  TANNER PROTECTS - Leading Insurance Advisor
                 </h3>
               </div>
 
               <div className="prose prose-lg text-muted-foreground">
                 <p className="mb-4">
-                  Hello! I'm Marcus Rodriguez, a dedicated and experienced insurance professional at Marcus Protects. 
+                  Hello! I'm Tanner Nappe, a dedicated and experienced insurance professional at Marcus Protects. 
                   With over 8 years in the insurance industry, I specialize in Life Insurance, Medicare Plans, 
                   ACA Marketplace coverage, and Notary services, providing tailored solutions to meet your unique needs.
                 </p>
@@ -195,7 +195,7 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Why Choose Marcus Protects?
+                Why Choose Tanner Protects?
               </h2>
               <p className="text-xl text-primary-foreground/80">
                 Experience the difference of working with a true insurance professional
