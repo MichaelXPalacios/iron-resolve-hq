@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Star, Award, Users } from "lucide-react";
-import professionalHeadshot from "@/assets/professional-headshot.jpg";
+import professionalHeadshot from "@/assets/BD5B7637-8FBA-45F7-9514-BD1A9F724345.jpeg";
 
 const HeroSection = () => {
   return (
@@ -8,8 +8,8 @@ const HeroSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-            Marcus Protects Brings Quality Insurance Coverage to Your Doorstep in{" "}
-            <span className="text-primary">Rio Grande Valley</span>
+            Tanner Protects Brings Quality Insurance Coverage to Your Doorstep in{" "}
+            <span className="text-primary">Austin, TX</span>
           </h1>
         </div>
 
@@ -18,7 +18,7 @@ const HeroSection = () => {
             <div className="relative">
               <img
                 src={professionalHeadshot}
-                alt="Marcus - Professional Insurance Agent"
+                alt="Tanner - Professional Insurance Agent"
                 className="w-80 h-80 rounded-full mx-auto lg:mx-0 object-cover shadow-hero border-4 border-background"
               />
               <div className="absolute -bottom-4 -right-4 bg-accent text-accent-foreground p-3 rounded-full shadow-lg">

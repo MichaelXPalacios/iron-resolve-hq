@@ -8,9 +8,9 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <img src={logo} alt="Marcus Protects" className="h-12 w-auto filter brightness-0 invert" />
+            <img src={logo} alt="Tanner Protects" className="h-12 w-auto filter brightness-0 invert" />
             <p className="text-primary-foreground/80 leading-relaxed">
-              Your trusted insurance professional in Rio Grande Valley, dedicated to protecting what matters most to you and your family.
+              Your trusted insurance professional in Texas, dedicated to protecting what matters most to you and your family.
             </p>
           </div>
 
@@ -27,7 +27,7 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Company</h3>
             <ul className="space-y-2">
-              <li><a href="#about" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">About Marcus</a></li>
+              <li><a href="#about" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">About Tanner</a></li>
               <li><a href="#blog" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Insurance Blog</a></li>
               <li><a href="#testimonials" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Client Reviews</a></li>
               <li><a href="#contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contact</a></li>
@@ -39,11 +39,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent" />
-                <span className="text-primary-foreground/80">956-758-8700</span>
+                <span className="text-primary-foreground/80">660-624-1072</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-accent" />
-                <span className="text-primary-foreground/80">marcus@marcusprotects.com</span>
+                <span className="text-primary-foreground/80">tanner@cardinal.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-accent" />
@@ -60,7 +60,7 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/60 text-sm">
-              © 2024 Marcus Protects. All rights reserved. Licensed Insurance Professional.
+              © 2024 Tanner Protects. All rights reserved. Cardinal Insurance.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#privacy" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">Privacy Policy</a>

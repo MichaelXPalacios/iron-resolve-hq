@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <img src={logo} alt="Marcus Protects" className="h-12 w-auto" />
+            <img src={logo} alt="Tanner Protects" className="h-12 w-auto" />
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
@@ -33,7 +33,7 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <Button variant="professional" className="hidden sm:flex">
               <Phone className="h-4 w-4" />
-              956-758-8700
+              660-624-1072
             </Button>
             <Button variant="ghost" size="icon" className="md:hidden">
               <Menu className="h-6 w-6" />
