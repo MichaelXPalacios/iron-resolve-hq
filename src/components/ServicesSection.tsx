@@ -30,7 +30,7 @@ const ServicesSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
             Discover the Right Insurance for Your Needs with{" "}
-            <span className="text-primary">Marcus Protects</span>
+            <span className="text-primary">Tanner Protects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Comprehensive protection solutions designed with your family's security and financial well-being in mind.

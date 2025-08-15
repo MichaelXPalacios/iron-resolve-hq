@@ -71,7 +71,7 @@ const About = () => {
               <div className="relative">
                 <img
                   src={professionalHeadshot}
-                  alt="Marcus - Professional Insurance Agent"
+                  alt="Tanner - Professional Insurance Agent"
                   className="w-full max-w-md mx-auto rounded-2xl shadow-hero object-cover"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-4 rounded-xl shadow-lg">
@@ -83,7 +83,7 @@ const About = () => {
             <div className="lg:w-1/2 space-y-6">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-                  Marcus Rodriguez
+                  Tanner Rodriguez
                 </h2>
                 <h3 className="text-xl text-primary font-semibold mb-4">
                   TANNER PROTECTS - Leading Insurance Advisor
@@ -92,7 +92,7 @@ const About = () => {
 
               <div className="prose prose-lg text-muted-foreground">
                 <p className="mb-4">
-                  Hello! I'm Tanner Nappe, a dedicated and experienced insurance professional at Marcus Protects. 
+                  Hello! I'm Tanner Nappe, a dedicated and experienced insurance professional at Tanner Protects. 
                   With over 8 years in the insurance industry, I specialize in Life Insurance, Medicare Plans, 
                   ACA Marketplace coverage, and Notary services, providing tailored solutions to meet your unique needs.
                 </p>
@@ -189,7 +189,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Why Choose Marcus Section */}
+      {/* Why Choose Tanner Section */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
