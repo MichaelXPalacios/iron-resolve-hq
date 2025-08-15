@@ -24,7 +24,7 @@ const About = () => {
     { icon: Users, number: "1000+", label: "Families Protected" },
     { icon: Shield, number: "500+", label: "Life Insurance Policies" },
     { icon: Heart, number: "300+", label: "Medicare Enrollments" },
-    { icon: Award, number: "8+", label: "Years Experience" }
+    { icon: Award, number: "2+", label: "Years Experience" }
   ];
 
   const qualifications = [
