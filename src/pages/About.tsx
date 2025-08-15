@@ -28,10 +28,8 @@ const About = () => {
   const qualifications = [
     "Licensed Insurance Professional",
     "Medicare Specialist Certification",
-    "ACA Marketplace Expert",
-    "Notary Public Commission",
-    "Business Administration Degree",
-    "Continuing Education Certified"
+    "Final Expense Certification",
+    "Business Administration Degree"
   ];
 
   const values = [
@@ -83,16 +81,16 @@ const About = () => {
             <div className="lg:w-1/2 space-y-6">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-                  Marcus Rodriguez
+                  Tanner Nappe
                 </h2>
                 <h3 className="text-xl text-primary font-semibold mb-4">
-                  MARCUS PROTECTS - Leading Insurance Advisor
+                  TANNER PROTECTS - Leading Insurance Advisor
                 </h3>
               </div>
 
               <div className="prose prose-lg text-muted-foreground">
                 <p className="mb-4">
-                  Hello! I'm Marcus Rodriguez, a dedicated and experienced insurance professional at Marcus Protects. 
+                  Hello! I'm Tanner Nappe, a dedicated and experienced insurance professional at Tanner Protects. 
                   With over 8 years in the insurance industry, I specialize in Life Insurance, Medicare Plans, 
                   ACA Marketplace coverage, and Notary services, providing tailored solutions to meet your unique needs.
                 </p>
@@ -129,7 +127,7 @@ const About = () => {
               Proven Track Record
             </h2>
             <p className="text-lg text-muted-foreground">
-              Numbers that reflect my commitment to protecting families in Rio Grande Valley
+              Numbers that reflect my commitment to protecting families in San Antonio and Austin areas
             </p>
           </div>
 
@@ -195,7 +193,7 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Why Choose Marcus Protects?
+                Why Choose Tanner Protects?
               </h2>
               <p className="text-xl text-primary-foreground/80">
                 Experience the difference of working with a true insurance professional
@@ -215,7 +213,7 @@ const About = () => {
                   <CheckCircle className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
                   <div>
                     <h4 className="font-semibold mb-2">Local Expertise</h4>
-                    <p className="text-primary-foreground/80">Deep understanding of Rio Grande Valley community needs and regulations.</p>
+                    <p className="text-primary-foreground/80">Deep understanding of San Antonio and Austin areas community needs and regulations.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -267,7 +265,7 @@ const About = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" className="text-lg px-8">
               <Phone className="h-5 w-5 mr-2" />
-              Call 956-758-8700
+              Call 660-624-1072
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8">
               <Mail className="h-5 w-5 mr-2" />
@@ -278,7 +276,7 @@ const About = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-8 text-muted-foreground">
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4" />
-              <span>Rio Grande Valley, TX</span>
+              <span>San Antonio and Austin, TX</span>
             </div>
             <div className="flex items-center gap-2">
               <Clock className="h-4 w-4" />
