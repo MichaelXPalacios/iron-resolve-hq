@@ -9,7 +9,7 @@ const HeroSection = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
             Tanner Protects Brings Quality Insurance Coverage to Your Doorstep in{" "}
-            <span className="text-primary">Austin, TX</span>
+            <span className="text-primary">San Antonio and Austin, TX</span>
           </h1>
         </div>
 
