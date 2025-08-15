@@ -19,8 +19,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#life-insurance" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Life Insurance</a></li>
               <li><a href="#medicare" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Medicare Plans</a></li>
-              <li><a href="#obamacare" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Obamacare/ACA</a></li>
-              <li><a href="#notary" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Notary Services</a></li>
+              <li><a href="#final-expense" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Final Expense</a></li>
             </ul>
           </div>
 
@@ -28,7 +27,7 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Company</h3>
             <ul className="space-y-2">
               <li><a href="#about" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">About Tanner</a></li>
-              <li><a href="#blog" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Insurance Blog</a></li>
+              <li><a href="#videolibrary" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Video Library</a></li>
               <li><a href="#testimonials" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Client Reviews</a></li>
               <li><a href="#contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contact</a></li>
             </ul>
@@ -43,11 +42,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-accent" />
-                <span className="text-primary-foreground/80">tanner@cardinal.com</span>
+                <span className="text-primary-foreground/80">tnappe.csb@gmail.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-accent" />
-                <span className="text-primary-foreground/80">Rio Grande Valley, TX</span>
+                <span className="text-primary-foreground/80">San Antonio and Austin areas, TX</span>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-accent" />
