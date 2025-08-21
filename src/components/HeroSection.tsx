@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Star, Award, Users } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import professionalHeadshot from "@/assets/BD5B7637-8FBA-45F7-9514-BD1A9F724345.jpeg";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-20 bg-gradient-to-br from-background via-muted/30 to-background">
       <div className="container mx-auto px-4">
@@ -57,10 +60,20 @@ const HeroSection = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="lg" className="text-lg px-8">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="text-lg px-8"
+                onClick={() => navigate('/schedule')}
+              >
                 Get Your Quote
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="text-lg px-8"
+                onClick={() => navigate('/schedule')}
+              >
                 Learn More
               </Button>
             </div>

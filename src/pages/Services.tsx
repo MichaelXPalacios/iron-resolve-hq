@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Shield, Heart, DollarSign, ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const services = [
   {
@@ -26,6 +27,8 @@ const services = [
 ];
 
 const Services = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -74,7 +77,11 @@ const Services = () => {
                         </ul>
                       </div>
                       
-                      <Button variant="cta" className="w-full group-hover:scale-105 transition-transform">
+                      <Button 
+                        variant="cta" 
+                        className="w-full group-hover:scale-105 transition-transform"
+                        onClick={() => navigate(`/schedule?service=${encodeURIComponent(service.title)}`)}
+                      >
                         Learn More About {service.title}
                       </Button>
                     </CardContent>
@@ -84,7 +91,12 @@ const Services = () => {
             </div>
 
             <div className="text-center mt-16">
-              <Button variant="hero" size="lg" className="text-lg px-12">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="text-lg px-12"
+                onClick={() => navigate('/schedule')}
+              >
                 Get Started with a Free Consultation
               </Button>
               <p className="text-muted-foreground mt-4">
