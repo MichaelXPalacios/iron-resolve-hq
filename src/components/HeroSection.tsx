@@ -8,8 +8,8 @@ const HeroSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-            Tanner Protects Brings Quality Insurance Coverage to Your Doorstep in{" "}
-            <span className="text-primary">San Antonio and Austin, TX</span>
+            Medicare and Life Insurance made simple — with guidance you can trust{" "}
+            <span className="text-primary"></span>
           </h1>
         </div>
 
@@ -29,8 +29,7 @@ const HeroSection = () => {
           
           <div className="lg:w-1/2 space-y-6">
             <h2 className="text-2xl md:text-3xl font-semibold text-foreground leading-relaxed">
-              Your trusted source for personalized insurance solutions. With expertise and commitment to exceptional service, 
-              I strive to provide you with the peace of mind and coverage you deserve.
+              Based in Austin and licensed in multiple states, Cardinal Life – Nappe Agency makes it simple to compare top-rated plans, review your current policies, and choose what is best for you — without the confusion. Whether you would like to chat on the phone or meet in person, we’re here to make getting clear answers easy and stress-free.
             </h2>
             
             <div className="flex items-center justify-center lg:justify-start gap-8 py-6">
@@ -70,7 +69,7 @@ const HeroSection = () => {
         <div className="text-center">
           <h3 className="text-xl font-semibold text-primary mb-4">We ensure the quality</h3>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Professional insurance solutions tailored to protect what matters most to you and your family.
+            Medicare and Life Insurance made simple — with guidance you can trust.
           </p>
         </div>
       </div>

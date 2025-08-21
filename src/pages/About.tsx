@@ -59,7 +59,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Meet Your <span className="text-primary">Insurance Expert</span>
+              Meet Your <span className="text-primary">Broker</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Talk with a professional who understands the importance of protecting your family's future
@@ -86,26 +86,19 @@ const About = () => {
                   Tanner Nappe
                 </h2>
                 <h3 className="text-xl text-primary font-semibold mb-4">
-                  TANNER PROTECTS - Leading Insurance Advisor
+                  TANNER NAPPE - Leading Insurance Advisor
                 </h3>
               </div>
 
               <div className="prose prose-lg text-muted-foreground">
                 <p className="mb-4">
-                  Hello! I'm Tanner Nappe, a dedicated and experienced insurance professional at Tanner Protects. 
-                  With over 2 years in the insurance industry, I specialize in Life Insurance, Medicare Plans, 
-                  ACA Marketplace coverage, and Notary services, providing tailored solutions to meet your unique needs.
+                  Tanner Nappe is a Broker at Cardinal Life with over two years of experience specializing in Life Insurance and Medicare Advantage plans. Known for his dependable, service-first approach, he takes pride in building lasting relationships with every client.
                 </p>
                 <p className="mb-4">
-                  My journey in insurance is driven by my commitment to protecting families and educating clients 
-                  about the critical importance of proper coverage. This dedication was strengthened through my 
-                  background in business and finance, where I learned the value of strategic planning and risk management.
+                  Originally from Warrensburg, Missouri, Tanner grew up traveling Europe, playing basketball, and enjoying time with his family. He earned a management degree with a focus in entrepreneurship from the University of Central Missouri.
                 </p>
                 <p>
-                  I take pride in having protected over 1,000 families with comprehensive insurance strategies, 
-                  helped 500+ individuals secure life insurance, and guided 300+ clients through Medicare enrollment. 
-                  My approach combines professional expertise with personal care, ensuring you receive both superior 
-                  coverage and clear understanding of your protection plan.
+                  Before joining Cardinal Life in 2024, Tanner spent seven years in door-to-door sales, where he earned top producer honors among more than 1,500 peers. Today, he brings that same dedication and care to helping his clients make informed insurance decisions
                 </p>
               </div>
 

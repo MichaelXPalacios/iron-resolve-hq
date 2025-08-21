@@ -6,19 +6,19 @@ const services = [
   {
     icon: Heart,
     title: "Life Insurance",
-    description: "Protecting your loved ones is my top priority. I offer a range of life insurance options to suit your unique needs. Whether it's term life for short-term coverage or whole life for lifelong security, I'm here to guide you through the choices, ensuring your family's financial stability and peace of mind.",
+    description: "From funeral costs to medical bills, Life Insurance helps cover life’s final expenses. We’re here to guide you toward a plan that provides security and peace of mind for your family",
     features: ["Term Life Insurance", "Whole Life Insurance", "Universal Life", "Family Protection Plans"]
   },
   {
     icon: DollarSign,
-    title: "Final Expense",
-    description: "Plan ahead with dignity and ensure your final expenses are covered. Final expense insurance provides peace of mind by covering funeral costs, medical bills, and other end-of-life expenses, protecting your family from financial burden during difficult times.",
+    title: "Policy Review",
+    description: "A policy review is a simple, no-pressure check of your current coverage. We’ll make sure it still fits your needs and budget, and guide you on any gaps or opportunities to improve your plan.",
     features: ["Funeral Coverage", "Medical Expenses", "Burial Costs", "Debt Protection"]
   },
   {
     icon: Shield,
     title: "Medicare Plans",
-    description: "Navigate Medicare with confidence. I help you understand your options and choose the right Medicare plan that fits your healthcare needs and budget. From Medicare Advantage to Supplement plans, I'll guide you through every step of the process.",
+    description: "Whether it’s your first time with Medicare or you are exploring new options, we will help you understand your choices and find coverage that works for your health and your wallet.",
     features: ["Medicare Advantage", "Medicare Supplements", "Part D Prescription", "Annual Open Enrollment"]
   }
 ];

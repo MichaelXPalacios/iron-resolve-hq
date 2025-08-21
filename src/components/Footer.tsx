@@ -4,7 +4,7 @@ import logo from "@/assets/TannerProtects.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-red-900 text-white">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
