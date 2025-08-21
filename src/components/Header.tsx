@@ -25,9 +25,9 @@ const Header = () => {
             <Link to="/videos" className="text-foreground hover:text-primary transition-colors font-medium">
               VIDEOS
             </Link>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors font-medium">
+            <Link to="/contact" className="text-foreground hover:text-primary transition-colors font-medium">
               CONTACT
-            </a>
+            </Link>
           </nav>
 
           <div className="flex items-center space-x-4">
