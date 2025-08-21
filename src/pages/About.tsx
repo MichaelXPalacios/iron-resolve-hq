@@ -71,7 +71,7 @@ const About = () => {
               <div className="relative">
                 <img
                   src={professionalHeadshot}
-                  alt="Marcus - Professional Insurance Agent"
+                  alt="Tanner - Professional Insurance Agent"
                   className="w-full max-w-md mx-auto rounded-2xl shadow-hero object-cover"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-4 rounded-xl shadow-lg">
@@ -83,16 +83,18 @@ const About = () => {
             <div className="lg:w-1/2 space-y-6">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-                  Tanner Nappe
+                  Marcus Rodriguez
                 </h2>
                 <h3 className="text-xl text-primary font-semibold mb-4">
-                  TANNER NAPPE - Leading Insurance Advisor
+                  MARCUS PROTECTS - Leading Insurance Advisor
                 </h3>
               </div>
 
               <div className="prose prose-lg text-muted-foreground">
                 <p className="mb-4">
-                  Tanner Nappe is a Broker at Cardinal Life with over two years of experience specializing in Life Insurance and Medicare Advantage plans. Known for his dependable, service-first approach, he takes pride in building lasting relationships with every client.
+                  Hello! I'm Marcus Rodriguez, a dedicated and experienced insurance professional at Marcus Protects. 
+                  With over 8 years in the insurance industry, I specialize in Life Insurance, Medicare Plans, 
+                  ACA Marketplace coverage, and Notary services, providing tailored solutions to meet your unique needs.
                 </p>
                 <p className="mb-4">
                   Originally from Warrensburg, Missouri, Tanner grew up traveling Europe, playing basketball, and enjoying time with his family. He earned a management degree with a focus in entrepreneurship from the University of Central Missouri.
@@ -182,7 +184,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Why Choose Marcus Section */}
+      {/* Why Choose Tanner Section */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
