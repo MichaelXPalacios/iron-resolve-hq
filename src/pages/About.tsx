@@ -17,7 +17,7 @@ import {
   TrendingUp,
   CheckCircle
 } from "lucide-react";
-import professionalHeadshot from "@/assets/BD5B7637-8FBA-45F7-9514-BD1A9F724345.jpeg";
+import professionalHeadshot from "@/assets/IMG_4433_Original.jpeg";
 
 const About = () => {
   const achievements = [
@@ -83,19 +83,17 @@ const About = () => {
             <div className="lg:w-1/2 space-y-6">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-                  Marcus Rodriguez
+                  Tanner Nappe
                 </h2>
                 <h3 className="text-xl text-primary font-semibold mb-4">
-                  MARCUS PROTECTS - Leading Insurance Advisor
+                  Cardinal Life - Nappe Agency
                 </h3>
               </div>
 
               <div className="prose prose-lg text-muted-foreground">
                 <p className="mb-4">
-                  Hello! I'm Marcus Rodriguez, a dedicated and experienced insurance professional at Marcus Protects. 
-                  With over 8 years in the insurance industry, I specialize in Life Insurance, Medicare Plans, 
-                  ACA Marketplace coverage, and Notary services, providing tailored solutions to meet your unique needs.
-                </p>
+                  Tanner Nappe is a Broker at Cardinal Life with over two years of experience specializing in Life Insurance and Medicare Advantage plans. Known for his dependable, service-first approach, he takes pride in building lasting relationships with every client.
+                   </p>
                 <p className="mb-4">
                   Originally from Warrensburg, Missouri, Tanner grew up traveling Europe, playing basketball, and enjoying time with his family. He earned a management degree with a focus in entrepreneurship from the University of Central Missouri.
                 </p>
@@ -185,7 +183,7 @@ const About = () => {
       </section>
 
       {/* Why Choose Tanner Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 bg-red-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -260,12 +258,20 @@ const About = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg" className="text-lg px-8">
-              <Phone className="h-5 w-5 mr-2" />
+            <Button
+              variant="hero"
+              size="lg"
+              className="text-lg px-8 bg-red-900 text-white hover:bg-red-800"
+  >
+            <Phone className="h-5 w-5 mr-2" />
               Call 660-624-1072
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8">
-              <Mail className="h-5 w-5 mr-2" />
+            <Button
+              variant="outline"
+              size="lg"
+              className="text-lg px-8 bg-red-900 text-white hover:bg-red-800"
+  >
+            <Mail className="h-5 w-5 mr-2" />
               Schedule Consultation
             </Button>
           </div>

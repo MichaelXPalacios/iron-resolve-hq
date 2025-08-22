@@ -21,16 +21,16 @@ const Contact = () => {
       icon: Phone,
       title: "Call Today",
       description: "Speak directly with Tanner for immediate assistance",
-      value: "956-758-8700",
-      action: "tel:956-758-8700",
+      value: "660-624-1072",
+      action: "tel:660-624-1072",
       primary: true
     },
     {
       icon: Mail,
       title: "Email Me",
       description: "Send your questions and I'll respond promptly",
-      value: "tanner@tannerprotects.com",
-      action: "mailto:tanner@tannerprotects.com",
+      value: "tnappe.csb@gmail.com",
+      action: "mailto:tnappe.csb@gmail.com",
       primary: false
     },
     {

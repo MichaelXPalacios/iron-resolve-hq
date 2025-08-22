@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
-import logo from "@/assets/TannerProtects.png";
+import logo from "@/assets/IMG_4433_Original.jpeg";
 
 const Footer = () => {
   return (

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Star, Award, Users } from "lucide-react";
-import professionalHeadshot from "@/assets/BD5B7637-8FBA-45F7-9514-BD1A9F724345.jpeg";
+import professionalHeadshot from "@/assets/IMG_4433_Original.jpeg";
 
 const HeroSection = () => {
   return (

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Menu } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "@/assets/TannerProtects.png";
+import logo from "@/assets/IMG_5590.jpeg";
 
 const Header = () => {
   return (
