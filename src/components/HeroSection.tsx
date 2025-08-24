@@ -63,7 +63,15 @@ const HeroSection = () => {
                 variant="hero" 
                 size="lg" 
                 className="text-lg px-8"
-                onClick={() => navigate('/schedule')}
+                onClick={() => {
+                  navigate('/schedule');
+                  setTimeout(() => {
+                    document.getElementById('booking-form')?.scrollIntoView({ 
+                      behavior: 'smooth', 
+                      block: 'center' 
+                    });
+                  }, 100);
+                }}
               >
                 Get Your Quote
               </Button>
