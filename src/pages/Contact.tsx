@@ -1,3 +1,5 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -198,7 +200,7 @@ const Contact = () => {
                       <MapPin className="h-5 w-5 text-primary" />
                       <div>
                         <p className="font-medium text-foreground">Location</p>
-                        <p className="text-muted-foreground">Rio Grande Valley, TX</p>
+                        <p className="text-muted-foreground">Central TX</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
@@ -236,12 +238,12 @@ const Contact = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" className="text-lg px-8" asChild>
-              <a href="tel:956-758-8700">
+              <a href="tel:660-624-1072">
                 <Phone className="h-5 w-5 mr-2" />
-                Call Now: 956-758-8700
+                Call Now: 660-624-1072
               </a>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <Button variant="outline" size="lg" className="text-lg px-8 ">
               <MessageCircle className="h-5 w-5 mr-2" />
               Text for Quick Response
             </Button>

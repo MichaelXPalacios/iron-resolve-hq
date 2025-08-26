@@ -188,7 +188,7 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Why Choose Tanner Protects?
+                Why Choose Cardinal Life - Nappe Agency?
               </h2>
               <p className="text-xl text-primary-foreground/80">
                 Experience the difference of working with a true insurance professional
@@ -258,20 +258,12 @@ const About = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              variant="hero"
-              size="lg"
-              className="text-lg px-8 bg-red-900 text-white hover:bg-red-800"
-  >
-            <Phone className="h-5 w-5 mr-2" />
+            <Button variant="hero" size="lg" className="text-lg px-8">
+              <Phone className="h-5 w-5 mr-2" />
               Call 660-624-1072
             </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="text-lg px-8 bg-red-900 text-white hover:bg-red-800"
-  >
-            <Mail className="h-5 w-5 mr-2" />
+            <Button variant="hero" size="lg" className="text-lg px-8">
+              <Mail className="h-5 w-5 mr-2" />
               Schedule Consultation
             </Button>
           </div>

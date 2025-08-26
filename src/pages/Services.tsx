@@ -37,8 +37,8 @@ const Services = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-                Insurance Services by{" "}
-                <span className="text-primary">Tanner Protects</span>
+                Cardinal Insurance - {" "}
+                <span className="text-primary">Nappe Agency</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 Comprehensive protection solutions designed with your family's security and financial well-being in mind.
