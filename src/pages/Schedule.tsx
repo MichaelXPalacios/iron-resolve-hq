@@ -78,6 +78,7 @@ const Schedule = () => {
       },
       attendees: [
         { email: data.email },
+        { email: "tnappe.csb@gmail.com" },
       ],
     };
 
