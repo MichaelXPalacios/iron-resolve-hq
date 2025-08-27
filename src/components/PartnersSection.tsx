@@ -1,17 +1,4 @@
 const PartnersSection = () => {
-  const partners = [
-    "Cigna",
-    "United Healthcare", 
-    "Humana",
-    "Aetna",
-    "Wellcare",
-    "American-Amicable",
-    "Mutual of Omaha",
-    "Transamerica",
-    "Life Insurance & Annuities",
-    "Gerber Life Insurance"
-  ];
-
   return (
     <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -25,17 +12,12 @@ const PartnersSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
-          {partners.map((partner, index) => (
-            <div 
-              key={index}
-              className="bg-background rounded-lg shadow-sm border p-6 w-full h-24 flex items-center justify-center hover:shadow-md transition-shadow"
-            >
-              <span className="text-sm font-semibold text-foreground text-center">
-                {partner}
-              </span>
-            </div>
-          ))}
+        <div className="flex justify-center">
+          <img 
+            src="/lovable-uploads/eb300f72-cf18-417f-ae52-61c21beb1983.png"
+            alt="Top Rated Insurance Partners - Cigna, United Healthcare, Humana, Aetna, Wellcare, American-Amicable, Mutual of Omaha, Transamerica, Life Insurance & Annuities, Gerber Life Insurance"
+            className="max-w-full h-auto"
+          />
         </div>
       </div>
     </section>
