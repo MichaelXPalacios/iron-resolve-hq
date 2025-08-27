@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useNavigate } from "react-router-dom";
 import { 
   Shield, 
   GraduationCap, 
@@ -20,6 +21,8 @@ import {
 import professionalHeadshot from "@/assets/IMG_4433_Original.jpeg";
 
 const About = () => {
+  const navigate = useNavigate();
+  
   const achievements = [
     { icon: Users, number: "1000+", label: "Families Protected" },
     { icon: Shield, number: "500+", label: "Life Insurance Policies" },
@@ -270,8 +273,9 @@ const About = () => {
               variant="outline"
               size="lg"
               className="text-lg px-8 bg-red-900 text-white hover:bg-red-800"
-  >
-            <Mail className="h-5 w-5 mr-2" />
+              onClick={() => navigate('/contact#message')}
+            >
+              <Mail className="h-5 w-5 mr-2" />
               Schedule Consultation
             </Button>
           </div>

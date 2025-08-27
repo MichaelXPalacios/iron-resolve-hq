@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { useEffect } from "react";
 import { 
   Phone, 
   Mail, 
@@ -18,6 +19,15 @@ import {
 } from "lucide-react";
 
 const Contact = () => {
+  useEffect(() => {
+    if (window.location.hash === '#message') {
+      const element = document.getElementById('message');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, []);
+
   const contactMethods = [
     {
       icon: Phone,
@@ -111,7 +121,7 @@ const Contact = () => {
         </section>
 
         {/* Contact Form Section */}
-        <section className="py-20 bg-muted/20">
+        <section id="message" className="py-20 bg-muted/20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
