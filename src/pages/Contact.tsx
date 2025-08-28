@@ -1,5 +1,3 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -16,6 +14,8 @@ import {
   CheckCircle,
   Send
 } from "lucide-react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const Contact = () => {
   const contactMethods = [
@@ -243,7 +243,7 @@ const Contact = () => {
                 Call Now: 660-624-1072
               </a>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 ">
+            <Button variant="hero" size="lg" className="text-lg px-8 ">
               <MessageCircle className="h-5 w-5 mr-2" />
               Text for Quick Response
             </Button>

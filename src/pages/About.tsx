@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useNavigate } from "react-router-dom";
 import { 
   Shield, 
   GraduationCap, 
@@ -20,6 +21,7 @@ import {
 import professionalHeadshot from "@/assets/IMG_4433_Original.jpeg";
 
 const About = () => {
+  const navigate = useNavigate();
   const achievements = [
     { icon: Users, number: "1000+", label: "Families Protected" },
     { icon: Shield, number: "500+", label: "Life Insurance Policies" },
@@ -262,8 +264,19 @@ const About = () => {
               <Phone className="h-5 w-5 mr-2" />
               Call 660-624-1072
             </Button>
-            <Button variant="hero" size="lg" className="text-lg px-8">
-              <Mail className="h-5 w-5 mr-2" />
+              <Button 
+              variant="hero" 
+              size="lg" 
+              className="text-lg px-8"
+              onClick={() => {
+                navigate('/schedule');
+                setTimeout(() => {
+                  document.getElementById('booking-form')?.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                  });
+                }, -100);
+              }}>
               Schedule Consultation
             </Button>
           </div>

@@ -70,7 +70,7 @@ const Schedule = () => {
       description: `Insurance consultation with ${data.name}\nPhone: ${data.phone}\nEmail: ${data.email}\nService: ${data.service}${data.message ? `\nNotes: ${data.message}` : ''}`,
       start: {
         dateTime: startDateTime.toISOString(),
-        timeZone: 'America/Chicago', // Rio Grande Valley timezone
+        timeZone: 'America/Chicago', // Austin timezone
       },
       end: {
         dateTime: endDateTime.toISOString(),
@@ -78,11 +78,12 @@ const Schedule = () => {
       },
       attendees: [
         { email: data.email },
+        { email: "tnappe.csb@gmail.com" },
       ],
     };
 
     // Create Google Calendar URL for manual addition
-    const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.summary)}&dates=${startDateTime.toISOString().replace(/[-:]/g, '').split('.')[0]}Z/${endDateTime.toISOString().replace(/[-:]/g, '').split('.')[0]}Z&details=${encodeURIComponent(event.description)}&location=Rio%20Grande%20Valley,%20TX`;
+    const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.summary)}&dates=${startDateTime.toISOString().replace(/[-:]/g, '').split('.')[0]}Z/${endDateTime.toISOString().replace(/[-:]/g, '').split('.')[0]}Z&details=${encodeURIComponent(event.description)}&location=Austin,%20TX`;
     
     return googleCalendarUrl;
   };
