@@ -21,16 +21,14 @@ const HeroSection = () => {
               <img
                 src={professionalHeadshot}
                 alt="Tanner - Professional Insurance Agent"
-                className="w-80 h-80 rounded-full mx-auto lg:mx-0 object-cover shadow-hero border-4 border-background"
+                className="w-100 h-100 rounded-full mx-auto lg:mx-0 object-cover shadow-hero border-4 border-background"
               />
-              <div className="absolute -bottom-4 -right-4 bg-accent text-accent-foreground p-3 rounded-full shadow-lg">
-                <Shield className="h-8 w-8" />
-              </div>
+
             </div>
           </div>
           
-          <div className="lg:w-1/2 space-y-6">
-            <h2 className="text-2xl md:text-3xl font-semibold text-foreground leading-relaxed">
+          <div className="lg:w-3/4 space-y-4">
+            <h2 className="text-2xl md:text-3xl font-semibold text-foreground leading-relaxed text-center mx-auto">
               Based in Austin and licensed in multiple states, Cardinal Life – Nappe Agency makes it simple to compare top-rated plans, review your current policies, and choose what is best for you — without the confusion. Whether you would like to chat on the phone or meet in person, we’re here to make getting clear answers easy and stress-free.
             </h2>
             
@@ -74,7 +72,12 @@ const HeroSection = () => {
               >
                 Get Your Quote
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8">
+              <Button
+                variant="outline"
+                size="lg"
+                className="text-lg px-8"
+                onClick={() => navigate("/services")}
+              >
                 Learn More
               </Button>
             </div>

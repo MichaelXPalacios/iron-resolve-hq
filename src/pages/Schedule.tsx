@@ -33,7 +33,7 @@ const timeSlots = [
 ];
 
 const services = [
-  "Life Insurance", "Final Expense", "Medicare Plans", "General Consultation"
+  "Life Insurance", "Final Expense", "Medicare Plans", "Policy Review"
 ];
 
 const Schedule = () => {
@@ -67,7 +67,7 @@ const Schedule = () => {
     
     const event = {
       summary: `Insurance Consultation - ${data.service}`,
-      description: `Insurance consultation with ${data.name}\nPhone: ${data.phone}\nEmail: ${data.email}\nService: ${data.service}${data.message ? `\nNotes: ${data.message}` : ''}`,
+      description: `Insurance consultation with ${data.name}\nThis is the Phone Number I'll be calling with - Phone: ${data.phone}\nEmail: ${data.email}\nService: ${data.service}${data.message ? `\nNotes: ${data.message}` : ''}`,
       start: {
         dateTime: startDateTime.toISOString(),
         timeZone: 'America/Chicago', // Austin timezone
@@ -89,15 +89,18 @@ const Schedule = () => {
   };
 
   const convertTo24Hour = (time12h: string) => {
-    const [time, modifier] = time12h.split(' ');
-    let [hours, minutes] = time.split(':');
-    if (hours === '12') {
-      hours = '00';
+    const [time, modifier] = time12h.split(" ");
+    const [hours, minutes] = time.split(":");
+    let hoursNum = parseInt(hours, 10);
+
+    if (modifier === "AM" && hoursNum === 12) {
+      // Midnight case
+      hoursNum = 0;
+    } else if (modifier === "PM" && hoursNum < 12) {
+      // Afternoon case
+      hoursNum += 12;
     }
-    if (modifier === 'PM') {
-      hours = (parseInt(hours, 10) + 12).toString();
-    }
-    return `${hours}:${minutes}:00`;
+    return `${hoursNum.toString().padStart(2, "0")}:${minutes}:00`;
   };
 
   const onSubmit = async (data: ScheduleFormData) => {

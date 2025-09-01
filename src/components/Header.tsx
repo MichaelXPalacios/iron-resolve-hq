@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Menu } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "@/assets/IMG_5590.jpeg";
+import logo from "@/assets/Cardinals.png";
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <img src={logo} alt="Tanner Protects" className="h-12 w-auto" />
+            <img src={logo} alt="Nappe Agency" className="h-12 w-auto" />
             <span className="text-foreground font-bold text-lg">
             Cardinal Life - Nappe Agency
             </span>
