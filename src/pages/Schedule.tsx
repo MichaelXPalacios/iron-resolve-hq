@@ -78,8 +78,6 @@ const Schedule = () => {
       },
       attendees: [
         { email: data.email },
-        { email: "tnappe.csb@gmail.com" },
-        { email: "tanner.nappe25@gmail.com"}
       ],
     };
 
@@ -151,7 +149,7 @@ const Schedule = () => {
             </p>
           </div>
 
-          <Card className="shadow-card">
+          <Card className="shadow-card" id="booking-form">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-2xl">
                 <Calendar className="h-6 w-6 text-primary" />

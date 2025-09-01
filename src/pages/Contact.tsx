@@ -1,8 +1,10 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { useEffect } from "react";
 import { 
   Phone, 
   Mail, 
@@ -19,6 +21,15 @@ import Footer from "@/components/Footer";
 
 
 const Contact = () => {
+  useEffect(() => {
+    if (window.location.hash === '#message') {
+      const element = document.getElementById('message');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, []);
+
   const contactMethods = [
     {
       icon: Phone,
