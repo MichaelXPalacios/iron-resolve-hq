@@ -40,16 +40,8 @@ const Contact = () => {
       icon: MessageCircle,
       title: "Text Message",
       description: "Quick questions? Send me a text message",
-      value: "956-758-8700",
-      action: "sms:956-758-8700",
-      primary: false
-    },
-    {
-      icon: Calendar,
-      title: "Schedule Meeting",
-      description: "Book a convenient time for detailed consultation",
-      value: "Schedule Now",
-      action: "#schedule",
+      value: "660-624-1072",
+      action: "sms:660-624-1072",
       primary: false
     }
   ];
@@ -81,7 +73,7 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="flex flex-wrap items-start justify-center gap-8">
               {contactMethods.map((method, index) => {
                 const IconComponent = method.icon;
                 return (
@@ -171,8 +163,7 @@ const Contact = () => {
                           <option value="life-insurance">Life Insurance</option>
                           <option value="final-expense">Final Expense</option>
                           <option value="medicare">Medicare Plans</option>
-                          <option value="multiple">Multiple Services</option>
-                          <option value="consultation">General Consultation</option>
+                          <option value="consultation">Policy Review</option>
                         </select>
                       </div>
 

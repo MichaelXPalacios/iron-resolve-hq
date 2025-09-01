@@ -67,7 +67,7 @@ const Schedule = () => {
     
     const event = {
       summary: `Insurance Consultation - ${data.service}`,
-      description: `Insurance consultation with ${data.name}\nThis is the Phone Number I'll be calling with - Phone: ${data.phone}\nEmail: ${data.email}\nService: ${data.service}${data.message ? `\nNotes: ${data.message}` : ''}`,
+      description: `Insurance consultation with Tanner Nappe\nThis is the Phone Number I'll be calling with - Phone: 660-624-1072\nEmail: tnappe.csb@gmail.com\nService: ${data.service}${data.message ? `\nNotes: ${data.message}` : ''}`,
       start: {
         dateTime: startDateTime.toISOString(),
         timeZone: 'America/Chicago', // Austin timezone
@@ -79,6 +79,7 @@ const Schedule = () => {
       attendees: [
         { email: data.email },
         { email: "tnappe.csb@gmail.com" },
+        { email: "tanner.nappe25@gmail.com"}
       ],
     };
 

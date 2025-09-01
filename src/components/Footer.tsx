@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
-import logo from "@/assets/IMG_4433_Original.jpeg";
+import cardinalLogo from "@/assets/Cardinals.png";
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <img src={logo} alt="Tanner Protects" className="h-12 w-auto filter brightness-0 invert" />
+            <img src={cardinalLogo} alt="Nappe Agency" className="h-12 w-auto" />
             <p className="text-primary-foreground/80 leading-relaxed">
               Your trusted insurance professional in Texas, dedicated to protecting what matters most to you and your family.
             </p>
@@ -20,6 +20,7 @@ const Footer = () => {
               <li><a href="#life-insurance" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Life Insurance</a></li>
               <li><a href="#medicare" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Medicare Plans</a></li>
               <li><a href="#final-expense" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Final Expense</a></li>
+              <li><a href="#policy-review" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Policy Review</a></li>
             </ul>
           </div>
 
