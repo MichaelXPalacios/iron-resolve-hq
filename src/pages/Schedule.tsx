@@ -78,12 +78,23 @@ const Schedule = () => {
       },
       attendees: [
         { email: data.email },
+        { email: 'tnappe.csb@gmail.com' },
       ],
     };
 
+    const attendeeEmails = event.attendees.map((a) => a.email).join(",");
+
     // Create Google Calendar URL for manual addition
-    const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.summary)}&dates=${startDateTime.toISOString().replace(/[-:]/g, '').split('.')[0]}Z/${endDateTime.toISOString().replace(/[-:]/g, '').split('.')[0]}Z&details=${encodeURIComponent(event.description)}&location=Austin,%20TX`;
-    
+    const params = new URLSearchParams({
+      action: "TEMPLATE",
+      text: event.summary,
+      dates: `${startDateTime.toISOString().replace(/[-:]/g, "").split(".")[0]}Z/${endDateTime.toISOString().replace(/[-:]/g, "").split(".")[0]}Z`,
+      details: event.description,
+      location: "Phone Call",
+      add: attendeeEmails,
+    });
+
+    const googleCalendarUrl = `https://calendar.google.com/calendar/render?${params.toString()}`;
     return googleCalendarUrl;
   };
 
